@@ -1,0 +1,46 @@
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Heart Rate</ion-card-title>
+    </ion-card-header>
+    <app-chart></app-chart>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-button (click)="onConnect()" expand="block" shape="round" [disabled]="connected">
+        <span *ngIf="!connected">
+          Connect
+        </span>
+        <span *ngIf="connected">
+          Connected
+        </span>
+      </ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      {{text}}
+    </ion-card-content>
+  </ion-card>
+  
+  <p *ngIf="text" >
+    1:{{text}}
+  </p>
+
+  <p *ngIf="data" >
+    2:{{data}}
+  </p>
+  
+  <p *ngIf="data1" >
+    3:{{data1}}
+  </p>
+  
+  <p *ngIf="resposta" >
+    Resposta: {{resposta}}
+  </p>
+  
+</ion-content>

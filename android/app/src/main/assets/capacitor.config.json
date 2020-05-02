@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "CESAR",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/snap/android-studio/current/android-studio/bin/studio.sh",
+  "server": {
+    "url": "http://10.0.0.106:8100",
+    "cleartext": true
+  }
+}
